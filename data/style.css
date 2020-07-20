@@ -1,0 +1,134 @@
+
+    html {
+     font-family: arial;
+     display: inline-block;
+     text-align: left;
+    }
+
+    #freq1 {
+      position: absolute;
+      top:155px;
+      left: 1085px;
+      width: 316px;
+      height: 319px;
+      border-radius: 150px;
+      background-image: url('/dial.png');
+      opacity: 0.9;
+    }  
+
+    #freq1_knob {
+      border-radius: 50px;
+      background-image: url('/knob.png');
+    }
+
+    div.DFT857 {
+      max-width: 1500px;
+      
+    }
+          
+    div.fond_affichage {
+      position: absolute;
+      top: 183px;
+      left:395px;
+      width: 482px;
+      height: 155px;
+      background-color: #ff9900;
+      border-radius: 10px;
+      margin: 0px;
+      padding: 0px;
+    }
+    div.afpremligne {
+      position: absolute;
+      top: 180px;
+      left:405px;
+      height: 60px;
+      margin: 0px;
+      padding: 0px;
+      font-size: 25px; 
+    }
+
+    div.afdeuxligne {
+      position: absolute;
+      top: 215px;
+      left:405px;
+      height: 35px;
+      margin: 0px;
+      padding: 0px;
+      font-size: 25px; 
+    }
+    div.affreq {
+      position: absolute;
+      top: 240px;
+      left: 440px;
+      height: 57px;
+      font-weight: bold;
+      margin: 0px;
+      padding: 0px;
+      font-size: 60px;
+      vertical-align:top;
+      text-align: right;
+    }
+    div.afdernligne {
+      position: absolute;
+      top: 305px;
+      left:430px;
+      height: 35px;
+      margin: 0px;
+      padding: 0px;
+      font-size: 25px; 
+    }
+
+    div.form-popup {
+      border: 3px solid black;
+      background-color: white;
+      display: none;
+      position: absolute;
+      top:20px;
+      left: 20px;
+      max-width: 235px;
+      z-index: 9;
+    }
+    div.form-popup-freq {
+      border: 3px solid black;
+      background-color: white;
+      display: none;
+      position: absolute;
+      top:10px;
+      left:810px;
+      max-width: 300px;
+      z-index: 9;
+    }
+    
+  div.red-led {
+      position: absolute;
+      display: none;
+      top:77px;
+      left: 969px;
+      width: 71px;
+      height: 61px;
+      z-index: 9;
+    }
+    
+    button.button1 {
+      background-color: green;
+      text-align: center;
+      margin-left: 25px;
+      padding: 8px;
+      width: 75px; 
+    }
+
+    button.button2 {
+      background-color: red;
+      text-align: center;
+      margin-left: 25px;
+      padding: 8px;
+      width: 75px; 
+    }
+
+    iframe.invis {
+      display: none;
+      width: 10px;
+      height: 10px;      
+    }
+        
+  
