@@ -140,8 +140,8 @@ unsigned long frequency_int;
 
 
 // Initialization of the WiFi network credentials - case ESP32 connected to an Access Point
-/* const char* ssid     = "Freebox-76CF07";
-const char* password = "adrexere-abiegna47-omittetis-evocante2&"; */
+/* const char* ssid     = "XXXXXXXXX";
+const char* password = "yyyyyyyyyyyyyyyy"; */
 
 // Initialization of the WiFi network credentials - case ESP32 is an Access Point. On my ESP32 IP V4 address is 192.168.4.1
 const char* ssid     = "ESP32essaiAP";
@@ -195,7 +195,7 @@ String processor(const String& var){
 void setup() {
     Serial.begin(115200); // serial link to the PC for debugging purposes
     radio.begin(38400); // serial link to the FT-857
-    
+
     // screen initialization
     tft.init();
     tft.setRotation(1);
