@@ -1,7 +1,8 @@
 
 
 /*
-* JogDial.js - v 1.0
+* JogDial.js - v 1.1
+* 17 Dec 2020 : Calculation of current_rotation was modified by Ph Lonc F6CZV : multiplication by mult and toFixed(0) were deleted
 *
 * Copyright (c) 2014 Sean Oh (ohsiwon@gmail.com)
 * Licensed under the MIT license
@@ -514,7 +515,7 @@ window.onload = function(){
 
     dialOne = JogDial(document.getElementById('freq1'),
                         {debug:false,  wheelSize:'90%',knobSize:'130px', minDegree:null, maxDegree:null, degreeStartAt: 0});
-    addEventListener("mousemove", function(event){if (event.target.rotation != undefined) {(current_rotation = event.target.rotation * mult).toFixed(0)};
+    addEventListener("mousemove", function(event){if (event.target.rotation != undefined) {(current_rotation = event.target.rotation)};
   });
 
       }

@@ -6,6 +6,8 @@
   </head>
 <body>
 
+<!-- Version 1.2 calculation of the frequency delta using the dial was fixed
+      issue FAST toggle management #1-->
 
 <!-- It is the FT-857D image. Clickable zones and actions on click (call of a Javascript function)  are defined with the map item -->
 
@@ -260,7 +262,7 @@ setInterval(function ( ) {
   If not 0 sends a request to the server */
 
 var xhttp12 = new XMLHttpRequest();
-  if ((current_rotation-prev_rotation) != 0) {frequpdate = String(current_rotation-prev_rotation);
+  if ((current_rotation-prev_rotation) != 0) {frequpdate = ((current_rotation-prev_rotation)*mult).toFixed(0);
   prev_rotation = current_rotation;
   xhttp12.open("GET", "/updatefrequency/?value=" + frequpdate + "&", true);
   xhttp12.send();
